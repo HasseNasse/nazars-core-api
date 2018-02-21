@@ -1,5 +1,6 @@
-package it;
+package it.application.rest;
 
+import it.EndpointTest;
 import org.junit.Test;
 
 public class TestApplication extends EndpointTest {

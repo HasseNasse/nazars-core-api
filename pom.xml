@@ -3,7 +3,7 @@
 
     <groupId>net.nazarsit</groupId>
     <artifactId>core-api</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <packaging>war</packaging>
 
     <!-- contains default pluginManagement configuration for liberty-maven-plugin -->
@@ -19,6 +19,7 @@
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
 
+        <app.dns>localhost</app.dns>
         <app.name>core</app.name>
         <testServerHttpPort>9080</testServerHttpPort>
         <testServerHttpsPort>9443</testServerHttpsPort>
@@ -173,6 +174,7 @@
                             <systemPropertyVariables>
                                 <liberty.test.port>${testServerHttpPort}</liberty.test.port>
                                 <war.context>${warContext}</war.context>
+                                <app.dns>${app.dns}</app.dns>
                             </systemPropertyVariables>
                         </configuration>
                     </execution>
